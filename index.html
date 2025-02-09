@@ -4,6 +4,7 @@
     <title>Alex Henri - Portfolio Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
 </head>
 
@@ -17,9 +18,13 @@
 
     <link rel = "icon" type="image/png" href="Projects/Graphics/Logos/signature.png">
 
+    
+
 
 <body>
 
+    <script src="Scripts/script.js"></script>
+    
     <div class = "banner">
         
         <h1>Welcome</h1>
@@ -34,7 +39,7 @@
     
     </div>
 
-    <div class = "c1" style="border-bottom: 1px solid #e9e9e9; display: flex; flex-direction: row;">
+    <div class = "c1" style="border-bottom: 2px solid #e9e9e9; display: flex; flex-direction: row;">
 
         <div style="width: 70%">
             <h2> >> Hi, I'm Alex!</h2>
@@ -42,26 +47,60 @@
                 I'm a <span style="color: #ff7700;">3D Artist </span>from Montreal, Canada.<br>
 
                 Welcome to my portfolio. On this site, you will find some of my work.<br>
-                I try to include insights and WIP work for those who are interested in my process.
-                I'm always open to your questions and/or comments; you can find my contact info below. 
+                I have included insights and WIP work for those who are interested in my process.<br>
+                I'm always open to comments and questions, please feel free to reach out!<br>
                 
             </p>
-            <ul class = "ul1"> <li><a style = "color:#7e7e7e;" href="Pages/about.html">Statement & Bio</a></li> </ul>
+
+            <ul style="list-style-type: circle; padding-top: 1em;">
+                <li><a style = "color:#7e7e7e;" href="Pages/about.html">Statement & Bio</a></li>
+                <li><a style = "color:#7e7e7e;" href="Pages/about.html">Curriculum Vitae</a></li>
+            </ul> 
+            
         </div>
 
         <div style="width: 50%;">
-            <img src = "Projects/Graphics/AlexHenriProfile.jpg" style="width: 100%;">
+            <img src = "Assets/Images/AlexHenriProfile.jpg" style="width: 100%;">
         </div>
 
     </div>
 
-    <div class = "c2" style=" display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
-        <img src = "Projects/Graphics/AlexHenriProfile.jpg" style="width: 32%;  margin: .5em;">
-        <img src = "Projects/Graphics/AlexHenriProfile.jpg" style="width: 32%;  margin: .5em;">
-        <img src = "Projects/Graphics/AlexHenriProfile.jpg" style="width: 32%;  margin: .5em;">
-        <img src = "Projects/Graphics/AlexHenriProfile.jpg" style="width: 32%;  margin: .5em;">
-        <img src = "Projects/Graphics/AlexHenriProfile.jpg" style="width: 32%;  margin: .5em;">
-        <img src = "Projects/Graphics/AlexHenriProfile.jpg" style="width: 32%;  margin: .5em;">
+    <div class = "gallery">
+
+        <div class="photo-container">
+            <img src = "Assets/Images/stump.png">
+            <div class="insight-overlay">
+                <p>This is my first piece, inspired by...</p>
+            </div>
+            <button class="insight-btn">?</button>
+        </div>
+
+        <div class="photo-container">
+            <img src = "Assets/Images/digiLute_inUse.jpg">
+            <div class="insight-overlay">
+                <p>This is my second piece, inspired by...</p>
+            </div>
+            <button class="insight-btn">?</button>
+        </div>
+
+        <div class="photo-container">
+            <img src = "Assets/Images/tree_main.jpg">
+            <div class="insight-overlay">
+                <p>This is my third piece, inspired by...</p>
+            </div>
+            <button class="insight-btn">?</button>
+        </div>
+
+        <!-- <img src = "Assets/Images/discoExpress.png">
+        <img src = "Assets/Images/discoExpress1.png">
+        <img src = "Assets/Images/discoExpress2.png">
+
+        <img src = "Assets/Images/visualizer.png">
+        <img src = "Assets/Images/guyFavreauRender.png">
+        <img src = "Assets/Images/breakbot6.png">
+        
+        <img src = "Assets/Images/DigiLuteRender.png"> -->
+
     </div>
 
 
@@ -71,9 +110,9 @@
 
         <div style="display: flex; flex-wrap: wrap; justify-content:left;"> 
 
-            <a href = "https://www.blender.org"> <img src = "Projects/Graphics/Logos/blender.png" alt="Blender Logo" style="width: auto; max-height: 4em; padding-left: 5%;" > </a>
-            <a href = "https://www.adobe.com/ca/creativecloud.html"> <img src = "Projects/Graphics/Logos/adobe.png" alt="Adobe Logo" style="width: auto; max-height: 4em; padding-left: 5%;"> </a>
-            <a href = "https://unity.com/products/unity-engine?_rsc=4qoeb"> <img src = "Projects/Graphics/Logos/unity.png" alt="Unity Logo" style="width: auto; max-height: 4em; padding-left: 5%;"> </a>
+            <a href = "https://www.blender.org"> <img src = "Assets/Logos/blender.png" alt="Blender Logo" style="width: auto; max-height: 4em; padding-left: 5%;" > </a>
+            <a href = "https://www.adobe.com/ca/creativecloud.html"> <img src = "Assets/Logos/adobe.png" alt="Adobe Logo" style="width: auto; max-height: 4em; padding-left: 5%;"> </a>
+            <a href = "https://unity.com/products/unity-engine?_rsc=4qoeb"> <img src = "Assets/Logos/unity.png" alt="Unity Logo" style="width: auto; max-height: 4em; padding-left: 5%;"> </a>
 
         </div>
 
