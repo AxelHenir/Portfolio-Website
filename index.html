@@ -4,193 +4,103 @@
     <title>Alex Henri - Portfolio Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-
-</head>
-
     <link rel="stylesheet" href="Stylesheets/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
-
-    <link rel = "icon" type="image/png" href="Projects/Graphics/Logos/signature.png">
-
-    
-
-
+    <link rel="icon" type="image/png" href="Projects/Graphics/Logos/signature.png">
+</head>
 <body>
-
-    <script src="Scripts/script.js"></script>
-    
-    <div class = "banner">
-        
+    <header class="banner">
         <h1>Welcome</h1>
+    </header>
 
-    </div>
+    <nav class="navbar">
+        <a href="index.html" class="activePage">Home</a>
+        <a href="Pages/about.html" class="inactivePage right">?</a>
+    </nav>
 
-    <div class="navbar">
+    <div class="intro">
 
-            <a href="index.html" class="activePage" >Home</a>
-            
-            <a href="Pages/about.html" class="inactivePage right">?</a>
-    
-    </div>
-
-    <div class = "c1" style="border-bottom: 2px solid #e9e9e9; display: flex; flex-direction: row;">
-
-        <div style="width: 75%">
+        <div class="intro-text">
             <h2> >> Hi, I'm Alex!</h2>
             <p>
-                I'm a <span style="color: #ff7700;">3D Artist </span>from Montreal, Canada.<br>
-
-                Welcome to my portfolio. On this site, you will find some of my work.<br>
-                I have included insights and WIP work for those who are interested in my process.<br>
-                I'm always open to comments and questions, please feel free to reach out!<br>
-                
+                I'm a <span class="highlight">3D Artist</span> from Montreal, Canada.<br>
+                Welcome to my portfolio. Here, you'll find some of my work, including insights and WIP pieces.<br>
+                Feel free to reach out!
             </p>
-
-            <ul style="list-style-type: circle; padding-top: 1em;">
-                <li><a style = "color:#7e7e7e;" href="Pages/about.html">Statement & Bio</a></li>
-                <li><a style = "color:#7e7e7e;" href="Pages/about.html">Curriculum Vitae</a></li>
-            </ul> 
-            
+            <a href="Assets/Files/Alex_Henri_CV.pdf" download class="cv-button">Curriculum Vitae (Download PDF)</a>
         </div>
 
-        <div style="width: 50%;">
-            <img src = "Assets/Images/AlexHenriProfile.jpg" style="width: 100%;">
+        <div class="profile-img">
+            <img src="Assets/Images/AlexHenriProfile.jpg" alt="Alex Henri Profile">
         </div>
 
     </div>
 
-    <div class = "gallery">
-
-        <div class="photo-container">
-            <img src = "Assets/Images/amber_sq.png">
-            <div class="insight-overlay">
-                <p>
-                    "Mox Amber" - Digital Render, January 2025.<br><br>
-                    A reimagining of the piece of with same name by Steven Belledin, a prominent Magic: the Gathering artist. 
-                </p>
+    <div class="projects">
+        <div class="project-grid">
+            <div class="project" data-title="The Stump">
+                <img src="Assets/Images/stump_sq.png" class="cover-img">
+                <div class="gallery" style="display: none;">
+                    <img src="Assets/Images/digilute_sq.png" data-insight="This is an early render of the DigiLute, exploring the instrument’s structure.">
+                    <img src="Assets/Images/wiretree_sq.png" data-insight="A process shot showing how the wire bonsai took shape.">
+                    <img src="Assets/Images/stump_sq.png" data-insight="The final render of The Stump, featuring a sunset over the coastal rocks.">
+                </div>
             </div>
-            <button class="insight-btn">?</button>
-        </div>
 
-        <div class="photo-container">
-            <img src = "Assets/Images/digilute_sq.png">
-            <div class="insight-overlay">
-                <p>"DigiLute" - Expressive Synthesizer, April 2024.<br><br>
-                    The DigiLute is an experimental musical instrument which was designed to exhibit a captivating balance of motoric expression and musical expression. A self-directed project powered by Arduino, the DigiLute was entirely designed, 3D printed, assembled and programmed myself.
-                </p>
+            <div class="project" data-title="The Stump">
+                <img src="Assets/Images/stump_sq.png" class="cover-img">
+                <div class="gallery" style="display: none;">
+                    <img src="Assets/Images/digilute_sq.png" data-insight="This is an early render of the DigiLute, exploring the instrument’s structure.">
+                    <img src="Assets/Images/wiretree_sq.png" data-insight="A process shot showing how the wire bonsai took shape.">
+                    <img src="Assets/Images/stump_sq.png" data-insight="The final render of The Stump, featuring a sunset over the coastal rocks.">
+                </div>
             </div>
-            <button class="insight-btn">?</button>
-        </div>
 
-        <div class="photo-container">
-            <img src = "Assets/Images/wiretree_sq.png">
-            <div class="insight-overlay">
-                <p>"Wire Bonsai" - Aluminum Wire, January 2023.<br><br>
-                    A hand-twisted aluminum wire bonsai tree. Rooted over a stone in a small white ceramic pot. 
-                </p>
+            <div class="project" data-title="The Stump">
+                <img src="Assets/Images/stump_sq.png" class="cover-img">
+                <div class="gallery" style="display: none;">
+                    <img src="Assets/Images/digilute_sq.png" data-insight="This is an early render of the DigiLute, exploring the instrument’s structure.">
+                    <img src="Assets/Images/wiretree_sq.png" data-insight="A process shot showing how the wire bonsai took shape.">
+                    <img src="Assets/Images/stump_sq.png" data-insight="The final render of The Stump, featuring a sunset over the coastal rocks.">
+                </div>
             </div>
-            <button class="insight-btn">?</button>
-        </div>
 
-        <div class="photo-container">
-            <img src = "Assets/Images/stump_sq.png">
-            <div class="insight-overlay">
-                <p>"The Stump" - Digital Render, February 2023.<br><br>
-                    A simple sunset scene powered by Blender's geometry nodes. A grassy hillside descends to a rocky coastline where the sun is beginning to set. Used weight painting techniques to scatter collections of flora and debris. 
-                </p>
+            <div class="project" data-title="The Stump">
+                <img src="Assets/Images/stump_sq.png" class="cover-img">
+                <div class="gallery" style="display: none;">
+                    <img src="Assets/Images/digilute_sq.png" data-insight="This is an early render of the DigiLute, exploring the instrument’s structure.">
+                    <img src="Assets/Images/wiretree_sq.png" data-insight="A process shot showing how the wire bonsai took shape.">
+                    <img src="Assets/Images/stump_sq.png" data-insight="The final render of The Stump, featuring a sunset over the coastal rocks.">
+                </div>
             </div>
-            <button class="insight-btn">?</button>
-        </div>
 
-        <div class="photo-container">
-            <img src = "Assets/Images/discoExpress.png">
-            <div class="insight-overlay">
-                <p>"Disco eXpress" - Digital Render, September 2022.<br><br>
-                    A fake album cover for a playlist I made during the summer. Featuring disco-sampled hip hop and pop-dance fusion, the album art features the flashy Toyota Supra bursting with energy.
-                </p>
+            <div class="project" data-title="The Stump">
+                <img src="Assets/Images/stump_sq.png" class="cover-img">
+                <div class="gallery" style="display: none;">
+                    <img src="Assets/Images/digilute_sq.png" data-insight="This is an early render of the DigiLute, exploring the instrument’s structure.">
+                    <img src="Assets/Images/wiretree_sq.png" data-insight="A process shot showing how the wire bonsai took shape.">
+                    <img src="Assets/Images/stump_sq.png" data-insight="The final render of The Stump, featuring a sunset over the coastal rocks.">
+                </div>
             </div>
-            <button class="insight-btn">?</button>
+            <!-- Additional projects can be added here, following the same structure -->
         </div>
-
-        <div class="photo-container">
-            <img src = "Assets/Images/discoExpress1.png">
-            <div class="insight-overlay">
-                <p>This is my third piece, inspired by...</p>
-            </div>
-            <button class="insight-btn">?</button>
-        </div>
-
-        <div class="photo-container">
-            <img src = "Assets/Images/discoExpress2.png">
-            <div class="insight-overlay">
-                <p>This is my third piece, inspired by...</p>
-            </div>
-            <button class="insight-btn">?</button>
-        </div>
-
-        <div class="photo-container">
-            <img src = "Assets/Images/visualizer_sq.png">
-            <div class="insight-overlay">
-                <p>This is my third piece, inspired by...</p>
-            </div>
-            <button class="insight-btn">?</button>
-        </div>
-
-        <div class="photo-container">
-            <img src = "Assets/Images/mountains_sq.png">
-            <div class="insight-overlay">
-                <p>This is my third piece, inspired by...</p>
-            </div>
-            <button class="insight-btn">?</button>
-        </div>
-
-        <div class="photo-container">
-            <img src = "Assets/Images/DigiLuteRender2.png">
-            <div class="insight-overlay">
-                <p>This is my third piece, inspired by...</p>
-            </div>
-            <button class="insight-btn">?</button>
-        </div>
-
-        <div class="photo-container">
-            <img src = "Assets/Images/hyperDemon.png">
-            <div class="insight-overlay">
-                <p>This is my third piece, inspired by...</p>
-            </div>
-            <button class="insight-btn">?</button>
-        </div>
-
     </div>
 
-
-    <div class="c1" style="border-top: 2px solid #e9e9e9;">
-
-        <h2> >> Toolkit </h2>
-
-        <div style="display: flex; flex-wrap: wrap; justify-content:left;"> 
-
-            <a href = "https://www.blender.org"> <img src = "Assets/Logos/blender.png" alt="Blender Logo" style="width: auto; max-height: 4em; padding-left: 5%;" > </a>
-            <a href = "https://www.adobe.com/ca/creativecloud.html"> <img src = "Assets/Logos/adobe.png" alt="Adobe Logo" style="width: auto; max-height: 4em; padding-left: 5%;"> </a>
-            <a href = "https://unity.com/products/unity-engine?_rsc=4qoeb"> <img src = "Assets/Logos/unity.png" alt="Unity Logo" style="width: auto; max-height: 4em; padding-left: 5%;"> </a>
-
+    <div id="lightbox" class="hidden">
+        <span id="close-btn">&times;</span>
+        <div id="lightbox-content">
+            <img id="lightbox-img" src="" alt="Showcase Image">
+            <p id="lightbox-insight"></p>
+            <div id="thumbnail-container"></div>
         </div>
-
+        <button id="prev-btn">&#10094;</button>
+        <button id="next-btn">&#10095;</button>
     </div>
 
-    
-    <div class = "c2">
+    <footer>
+        <p>Contact me: <a href="mailto:alexhenrimail@gmail.com">AlexHenriMail@gmail.com</a></p>
+    </footer>
 
-        <h2>>> Contact</h2>
-        <p>Email: AlexHenriMail@gmail.com</p>
-
-    </div>
-    
+    <script src="Scripts/script.js"></script>
 </body>
-
 </html>
