@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         coverImg.addEventListener("click", () => {
             images = [coverImg.src, ...Array.from(galleryImages).map(img => img.src)];
-            insights = ["Cover image of this project", ...Array.from(galleryImages).map(img => img.dataset.insight || "")];
+            insights = [coverImg.dataset.insight || "Cover image of this project", 
+                        ...Array.from(galleryImages).map(img => img.dataset.insight || "")];
 
             currentProject = project;
             currentImageIndex = 0;
@@ -29,15 +30,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     closeBtn.addEventListener("click", () => {
-        lightbox.classList.remove("active");
+        closeLightbox();
     });
 
-    prevBtn.addEventListener("click", () => {
+    lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    prevBtn.addEventListener("click", (event) => {
+        event.stopPropagation();
         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
         showImage();
     });
 
-    nextBtn.addEventListener("click", () => {
+    nextBtn.addEventListener("click", (event) => {
+        event.stopPropagation();
         currentImageIndex = (currentImageIndex + 1) % images.length;
         showImage();
     });
@@ -48,13 +57,18 @@ document.addEventListener("DOMContentLoaded", () => {
         updateThumbnails();
     }
 
+    function closeLightbox() {
+        lightbox.classList.remove("active");
+    }
+
     function generateThumbnails() {
         thumbnailContainer.innerHTML = "";
         images.forEach((src, index) => {
             const thumb = document.createElement("img");
             thumb.src = src;
             thumb.classList.add("thumbnail");
-            thumb.addEventListener("click", () => {
+            thumb.addEventListener("click", (event) => {
+                event.stopPropagation();
                 currentImageIndex = index;
                 showImage();
             });
