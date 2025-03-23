@@ -52,9 +52,6 @@ li.navbarRight {
     float: right;
 }
 
-.navbarActive {
-    color: #ff7700;
-}
 
 .navbar a {
 
@@ -64,6 +61,10 @@ li.navbarRight {
     padding: 14px 20px;
 
     transition: 0.3s;
+}
+
+a.navbarActive {
+    color: #ff8820;
 }
 
 .navbar a:hover {
@@ -92,7 +93,7 @@ li.navbarRight {
 
 .profile-img img {
     max-width: 100%;
-    max-height: 1000px;
+    
     width: auto;
     height: auto;
     display: block;
@@ -103,7 +104,8 @@ li.navbarRight {
 .intro-text {
     max-width: 50%;
     flex: 2;
-    padding: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .cv-button {
@@ -118,14 +120,17 @@ li.navbarRight {
 @media (max-width: 900px) {
     .intro {
         flex-direction: column;
-        text-align: center;
+        
     }
     .profile-img {
         max-width: 100%;
         order: -1; /* Move image to the top */
     }
     .intro-text {
-        padding-left: 0;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        max-width: 100%;
     }
 }
 
