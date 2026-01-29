@@ -66,13 +66,28 @@ if (expandIntroBtn && introExpanded) {
 
 // Download CV button functionality
 if (downloadCvBtn) {
-    downloadCvBtn.addEventListener('click', () => {
-        const cvLink = document.createElement('a');
-        cvLink.href = 'https://assets.alexhenri.art/cv-download/Alex%20Henri%20CV%20-%20Winter%202025.pdf';
-        cvLink.download = 'Alex Henri CV - Winter 2025.pdf';
-        document.body.appendChild(cvLink);
-        cvLink.click();
-        document.body.removeChild(cvLink);
+    downloadCvBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const fileUrl = 'https://assets.alexhenri.art/cv-download/Alex%20Henri%20CV%20-%20Winter%202025.pdf';
+        const fileName = 'Alex Henri CV - Winter 2025.pdf';
+
+        try {
+            const response = await fetch(fileUrl);
+            if (!response.ok) throw new Error('Network response was not ok');
+            const blob = await response.blob();
+            const blobUrl = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = blobUrl;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            // Clean up the object URL after a short delay
+            setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+        } catch (err) {
+            // If fetch fails (e.g., due to CORS), open the file in a new tab so the user stays on the portfolio
+            window.open(fileUrl, '_blank', 'noopener');
+        }
     });
 }
 
