@@ -1,13 +1,22 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Responsive root font-size: scales between 14px and 18px based on viewport width */
+    font-size: clamp(14px, 0.9rem + 0.6vw, 18px);
+}
+
 body {
-    width: 80vw; /* Set width to 80% of the viewport width */
+    width: 80%;
+    /*max-width: 1100px;  Keeps lines readable on large screens */
     margin: 0 auto; /* Center the body */
 
     background-image: repeating-linear-gradient(45deg, #f8f8f8 0, #f8f8f8 1.6px, #ffffff 0, #ffffff 50%);
     background-size: 16px 16px;
 
     font-family: "Noto Sans Mono", monospace;
-    font-size: 18px;
-}
+    font-size: 1rem; /* 1rem will now follow the responsive root defined on html */
+} 
 
 .intro-card {
     background-color: #fff;
@@ -27,6 +36,7 @@ body {
 
 .profile-image {
     max-width: 100%;
+    height: 100%;
     border-radius: 2px;
     display: block;
     margin: 0;
@@ -462,6 +472,11 @@ body {
     to {
         opacity: 1;
     }
+}
+
+/* Ensure modal close scales well on smaller screens */
+.modal-close {
+    font-size: clamp(28px, 4vw, 40px);
 }
 
 .footer-card{
