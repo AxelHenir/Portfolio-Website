@@ -6,7 +6,7 @@ body {
     background-size: 16px 16px;
 
     font-family: "Noto Sans Mono", monospace;
-    font-size: normal;
+    font-size: 18px;
 }
 
 .intro-card {
@@ -38,7 +38,7 @@ body {
     align-items: flex-start;
     gap: 12px;
     justify-content: space-between;
-    text-align: justify;
+    text-align: left;
 
     
 }
@@ -197,7 +197,7 @@ body {
 
 .card-title {
     padding: 0;
-    font-size: 1rem;
+    font-size: inherit;
     color: #000000;
     margin: 0;
     flex: 1;
@@ -212,7 +212,7 @@ body {
     text-decoration: underline;
     font-weight: light;
     font-family: "Noto Sans Mono", monospace;
-    font-size: large;
+    font-size: inherit;
     cursor: pointer;
     transition: opacity 0.2s ease;
     white-space: nowrap;
@@ -229,7 +229,7 @@ body {
 }
 
 .card-full-description {
-    font-size: 1rem;
+    font-size: inherit;
     color: #000000;
     margin: 0;
 }
