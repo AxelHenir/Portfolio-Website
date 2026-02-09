@@ -1,9 +1,5 @@
-html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    /* Responsive root font-size: scales between 14px and 18px based on viewport width */
-    font-size: clamp(14px, 0.9rem + 0.6vw, 18px);
+html{
+    font-size: 16px; /* Base font size */
 }
 
 body {
@@ -60,7 +56,7 @@ body {
     margin:0;
     
 
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 1.1vw, 1.5rem);
     width: 100%;
     align-self: flex-start;
 }
@@ -74,12 +70,14 @@ body {
 
 .intro-main h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 1.1vw, 1.5rem);
 }
 
 .intro-text {
     color: #000000;
     margin: 0;
+
+    font-size: 1rem;
     line-height: 1.25;
 }
 
@@ -115,6 +113,7 @@ body {
     background: none;
     border: none;
     color: #ff7700;
+
     text-decoration: underline;
     font-size: inherit;
     font-weight: light;
@@ -302,7 +301,7 @@ body {
     border: none;
     color: #a0a0a0;
     font-family: "Noto Sans Mono", monospace;
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 1.1vw, 1.5rem);
     cursor: pointer;
     transition: color 0.2s ease;
 }

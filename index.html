@@ -61,16 +61,38 @@
 
     <div class="filter-buttons">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="renders">Renders</button>
-        <button class="filter-btn" data-filter="objects">Objects</button>
-        <button class="filter-btn" data-filter="videos">Videos</button>
+        <button class="filter-btn" data-filter="static">Static</button>
+        <button class="filter-btn" data-filter="dynamic">Dynamic</button>
+        <button class="filter-btn" data-filter="interactive">Interactive</button>
     </div>
     
     <!-- Content -->
 
     <div class="content-grid">
 
-        <div class="content-card" data-category="objects">
+        <div class="content-card" data-category="static">
+            <img src="https://assets.alexhenri.art/1million/1million3.png" alt="1 Million" class="card-image" data-card-index="0">
+            <div class="card-header">
+                <p class="card-title">1 Million (2023)</p>
+                <button class="expand-card-btn">More</button>
+            </div>
+
+            <div class="card-expanded">
+                <div class="card-description-section">
+                    <p class="card-full-description">1 Million is a generative art making website I made with p5.js for school.
+                    Visit the site here: <a href="https://axelhenir.github.io/CART-263/Projects/P2%20-%20Generative_Art/index.html" target="_blank" class="external-link">1 Million</a>
+                    </p>
+                </div>
+                <div class="gallery-images">
+                    <img src="https://assets.alexhenri.art/1million/1million0.png" alt="1 Million - L System" class="gallery-image" data-card-index="0">
+                    <img src="https://assets.alexhenri.art/1million/1million1.png" alt="1 Million - Subdivision" class="gallery-image" data-card-index="0">
+                    <img src="https://assets.alexhenri.art/1million/1million2.png" alt="1 Million - Flowfield" class="gallery-image" data-card-index="0">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-card" data-category="interactive">
             <img src="https://assets.alexhenri.art/digilute/digilute0.png" alt="Octo (2025)" class="card-image" data-card-index="0">
             <div class="card-header">
                 <p class="card-title">DigiLute (2024)</p>
@@ -90,7 +112,7 @@
 
         </div>
 
-        <div class="content-card" data-category="renders">
+        <div class="content-card" data-category="dynamic">
             <img src="https://assets.alexhenri.art/mox-amber/amber0.png" alt="Mox Amber (2024)" class="card-image" data-card-index="1">
             <div class="card-header">
                 <p class="card-title">Mox Amber (2024)</p>
@@ -107,7 +129,7 @@
             </div>
         </div>
 
-        <div class="content-card" data-category="renders">
+        <div class="content-card" data-category="dynamic">
             <img src="https://assets.alexhenri.art/secrets-of-magic/OctoOutlands.png" alt="The Secrets of Magic (2025)" class="card-image" data-card-index="2">
             <div class="card-header">
                 <p class="card-title">The Secrets of Magic (2025)</p>
@@ -123,7 +145,7 @@
             </div>
         </div>
 
-        <div class="content-card video-card" data-category="videos">
+        <div class="content-card video-card" data-category="dynamic">
             <div class="video-iframe-wrapper">
                 <iframe src="https://player.vimeo.com/video/763281048" 
                         frameborder="0" 
@@ -132,12 +154,12 @@
                 </iframe>
             </div>
             <div class="card-header">
-                <p class="card-title">Game Over (2023)</p>
+                <p class="card-title">Game Over (2022)</p>
                 <button class="expand-card-btn">More</button>
             </div>
             <div class="card-expanded">
                 <div class="card-description-section">
-                    <p class="card-full-description">A short typographic motion video listing off humanity's "score" as though its existence were a game.</p>
+                    <p class="card-full-description">A short typographic motion video made in after effects for a school project.</p>
                 </div>
             </div>
         </div>
