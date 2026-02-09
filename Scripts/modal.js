@@ -18,9 +18,9 @@ galleryImages.forEach(img => {
         const card = img.closest('.content-card');
         const coverImage = card.querySelector('.card-image');
 
-        // Update cover image
-        coverImage.src = img.src;
-        coverImage.alt = img.alt;
+        // Update cover image - this is optional and can be commented out to stop the cover image from changing
+        //coverImage.src = img.src;
+        //coverImage.alt = img.alt;
 
         // Show fullscreen
         modalImage.src = img.src;
@@ -53,7 +53,7 @@ if (expandIntroBtn && introExpanded) {
             introExpanded.style.display = 'block';
             introMain.style.display = 'none';
             introHeader.textContent = 'Alex Henri  //  About';
-            expandIntroBtn.innerHTML = '<span class="highlight">Less</span>';
+            expandIntroBtn.innerHTML = '<span class="highlight"><< Back</span>';
         } else {
             // Hide expanded, show main
             introExpanded.style.display = 'none';
